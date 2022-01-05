@@ -1,0 +1,19 @@
+//RANGE
+x<-scan()
+l=length(x)
+max=x[1]
+min=x[1]
+for(i in 2:l){
+  if(max<x[i]){
+    max=x[i]
+  }
+}
+for(i in 2:l){
+  if(min>x[i]){
+    min=x[i]
+  }
+}
+cat("maximum is",max,"\n")
+cat("minimum is",min,"\n")
+r=max-min
+cat("range is",r)
