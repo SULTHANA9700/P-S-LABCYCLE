@@ -1,0 +1,15 @@
+//STANDARD DEVIATION
+x<-scan()
+sum=0
+for(i in 1:length(x)){
+  sum=sum+i
+}
+mean=sum/length(x)
+l=length(x)
+t=0
+
+for(i in 1:length(x)){
+  m=(x[i]-mean)^2
+  t=t+m
+}
+print((t/l)^(1/2))
